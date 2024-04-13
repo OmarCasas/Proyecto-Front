@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria MiMascota</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function mostrarInicio() {
+            document.getElementById("inicio").style.display = "block";
+            document.getElementById("servicios").style.display = "none";
+            document.getElementById("precios").style.display = "none";
+            document.getElementById("equipo").style.display = "none";
+            document.getElementById("testimonios").style.display = "none";
+            document.getElementById("contacto").style.display = "none";
+        }
+
+        function mostrarServicios() {
+            document.getElementById("inicio").style.display = "none";
+            document.getElementById("servicios").style.display = "block";
+            document.getElementById("precios").style.display = "none";
+            document.getElementById("equipo").style.display = "none";
+            document.getElementById("testimonios").style.display = "none";
+            document.getElementById("contacto").style.display = "none";
+        }
+
+        function mostrarPrecios() {
+            document.getElementById("inicio").style.display = "none";
+            document.getElementById("servicios").style.display = "none";
+            document.getElementById("precios").style.display = "block";
+            document.getElementById("equipo").style.display = "none";
+            document.getElementById("testimonios").style.display = "none";
+            document.getElementById("contacto").style.display = "none";
+        }
+
+        function mostrarEquipo() {
+            document.getElementById("inicio").style.display = "none";
+            document.getElementById("servicios").style.display = "none";
+            document.getElementById("precios").style.display = "none";
+            document.getElementById("equipo").style.display = "block";
+            document.getElementById("testimonios").style.display = "none";
+            document.getElementById("contacto").style.display = "none";
+        }
+
+        function mostrarTestimonios() {
+            document.getElementById("inicio").style.display = "none";
+            document.getElementById("servicios").style.display = "none";
+            document.getElementById("precios").style.display = "none";
+            document.getElementById("equipo").style.display = "none";
+            document.getElementById("testimonios").style.display = "block";
+            document.getElementById("contacto").style.display = "none";
+        }
+
+        function mostrarContacto() {
+            document.getElementById("inicio").style.display = "none";
+            document.getElementById("servicios").style.display = "none";
+            document.getElementById("precios").style.display = "none";
+            document.getElementById("equipo").style.display = "none";
+            document.getElementById("testimonios").style.display = "none";
+            document.getElementById("contacto").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Veterinaria MiMascota</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio" onclick="mostrarInicio()">Inicio</a></li>
+                <li><a href="#servicios" onclick="mostrarServicios()">Servicios</a></li>
+                <li><a href="#precios" onclick="mostrarPrecios()">Precios</a></li>
+                <li><a href="#equipo" onclick="mostrarEquipo()">Equipo</a></li>
+                <li><a href="#testimonios" onclick="mostrarTestimonios()">Testimonios</a></li>
+                <li><a href="#contacto" onclick="mostrarContacto()">Contacto</a></li>
+                <li><a href="https://www.google.com" target="_blank">Enlace Externo</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Contenido de la página de inicio -->
+    <section id="inicio">
+        <h2>Bienvenidos a Veterinaria MiMascota</h2>
+        <p>Somos una clínica veterinaria comprometida con la salud y el bienestar de tus mascotas.</p>
+        <p>Ofrecemos una amplia gama de servicios veterinarios, desde consultas generales hasta cirugías especializadas.</p>
+        <p>¡Confía en nosotros para el cuidado de tu mejor amigo!</p>
+        <a href="#contacto" onclick="mostrarContacto()">¡Contáctanos!</a>
+    </section>
+
+    <!-- Contenido de la página de servicios -->
+    <section id="servicios" style="display:none;">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+            <li>Consultas generales</li>
+            <li>Vacunación</li>
+            <li>Desparasitación</li>
+            <li>Cirugías</li>
+            <li>Atención de urgencias</li>
+        </ul>
+    </section>
+
+    <!-- Contenido de la página de precios -->
+    <section id="precios" style="display:none;">
+        <h2>Precios de Servicios</h2>
+        <table>
+            <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Consulta general</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>Vacunación</td>
+                <td>$30</td>
+            </tr>
+            <tr>
+                <td>Desparasitación</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Cirugía (promedio)</td>
+                <td>$200-$500</td>
+            </tr>
+            <tr>
+                <td>Atención de urgencias</td>
+                <td>$100</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contenido de la página del equipo -->
+    <section id="equipo" style="display:none;">
+        <h2>Nuestro Equipo</h2>
+        <div class="miembro">
+            <h3>Dr. Juan Pérez</h3>
+            <p>Veterinario</p>
+        </div>
+        <div class="miembro">
+            <h3>Dra. María González</h3>
+            <p>Cirujana Veterinaria</p>
+        </div>
+    </section>
+
+    <!-- Contenido de la página de testimonios -->
+    <section id="testimonios" style="display:none;">
+        <h2>Testimonios de Clientes</h2>
+        <div class="testimonio">
+            <p>"¡Excelente servicio! Mi mascota recibió un tratamiento de primera y se recuperó rápidamente. ¡Gracias!"</p>
+            <p>- Ana López</p>
+        </div>
+        <div class="testimonio">
+            <p>"El personal de la veterinaria es muy amable y profesional. Siempre los recomiendo a mis amigos y familiares."</p>
+            <p>- Carlos Pérez</p>
+        </div>
+    </section>
+
+    <!-- Contenido de la página de contacto -->
+    <section id="contacto" style="display:none;">
+        <h2>Contáctanos</h2>
+        <form id="formularioContacto" action="enviar" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <script>
+        // Obtener el formulario de contacto
+        var formularioContacto = document.getElementById("formularioContacto");
+    
+        // Agregar un evento de envío al formulario
+        formularioContacto.addEventListener("submit", function(event) {
+            // Mostrar una alerta de éxito
+            alert("¡El formulario se ha enviado exitosamente!");
+    
+            // Prevenir el comportamiento predeterminado de enviar el formulario
+            event.preventDefault();
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Veterinaria MiMascota. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
